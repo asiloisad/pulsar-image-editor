@@ -117,6 +117,22 @@
       "default": 20,
       "minimum": 5,
       "maximum": 50
+    },
+    "enablePreloading": {
+      "order": 7,
+      "title": "Enable Image Preloading",
+      "description": "Preload adjacent images in the background for instant navigation. Uses more memory but makes navigation feel instant.",
+      "type": "boolean",
+      "default": true
+    },
+    "wheelNavigationDelay": {
+      "order": 8,
+      "title": "Mouse Wheel Navigation Delay",
+      "description": "Minimum delay (in milliseconds) between mouse wheel navigation events. Higher values prevent accidental rapid scrolling.",
+      "type": "integer",
+      "default": 150,
+      "minimum": 50,
+      "maximum": 500
     }
   }
 }
