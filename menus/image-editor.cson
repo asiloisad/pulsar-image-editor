@@ -1,0 +1,4 @@
+'context-menu':
+  '.image-editor': [
+    {label: 'Reload Image', command: 'image-editor:reload'}
+  ]

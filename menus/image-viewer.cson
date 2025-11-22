@@ -1,4 +1,0 @@
-'context-menu':
-  '.image-viewer': [
-    {label: 'Reload Image', command: 'image-viewer:reload'}
-  ]
