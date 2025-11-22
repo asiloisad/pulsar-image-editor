@@ -2,7 +2,7 @@
   "name": "image-editor",
   "description": "Open images in an editor",
   "repository": "https://github.com/asiloisad/pulsar-image-editor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "engines": {
     "atom": "*"
@@ -27,7 +27,12 @@
       "order": 1,
       "title": "Default Background Color",
       "type": "string",
-      "enum": ["white", "black", "transparent", "native"],
+      "enum": [
+        "white",
+        "black",
+        "transparent",
+        "native"
+      ],
       "default": "native"
     },
     "showSuccessMessages": {
