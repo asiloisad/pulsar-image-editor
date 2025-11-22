@@ -1,9 +1,7 @@
 - optimize file loading time if large size
 - add multiple selection, but cropy allow only 1
-- loading spinner of atom
 - blur method: make it selection aware (like other filter functions)
 - list to scales if clicked on....
 - add service provider
 - add toggle in toolbar to indicate and change status of reverse colors (global state)
-- add tooltips to button: "center", "zoom to fit", "zoom to 100"
 - change tooltips of arrow to match pulsar styleguide
