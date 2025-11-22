@@ -47,6 +47,7 @@
           {
             label: 'Selection'
             submenu: [
+              {label: 'Auto Select', command: 'image-editor:auto-select'}
               {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
               {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
             ]
@@ -107,6 +108,7 @@
     {
       label: 'Selection'
       submenu: [
+        {label: 'Auto Select', command: 'image-editor:auto-select'}
         {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
         {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
       ]

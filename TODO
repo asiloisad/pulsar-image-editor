@@ -1,11 +1,10 @@
-- keep position of image if undo after crop
 - optimize file loading time if large size
 - add multiple selection, but cropy allow only 1
-- auto crop selection: automatic selection excluding white areas near picture limits
 - loading spinner of atom
 - blur method: make it selection aware (like other filter functions)
 - list to scales if clicked on....
 - add actual mouse position in status bar panel
+- add commands "first-image" ("Home") and "last-image" ("End")
 - add buton "<<" (go to first picture, "Home") and ">>" (go to last picture, "End")
 - add service provider
 - add toggle in toolbar to indicate and change status of reverse colors (global state)
