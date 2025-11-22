@@ -1,5 +1,4 @@
 - optimize file loading time if large size
-- add multiple selection, but cropy allow only 1
 - list to scales if clicked on....
 - add service provider
 - preserve selection after use any method e.g. grayscale

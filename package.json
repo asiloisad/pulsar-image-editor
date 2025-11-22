@@ -99,6 +99,24 @@
       "description": "Invert image colors for viewing (does not affect saved image)",
       "type": "boolean",
       "default": false
+    },
+    "largeImageThreshold": {
+      "order": 5,
+      "title": "Large Image Threshold",
+      "description": "File size threshold (in MB) for applying optimizations. Images larger than this will use async decoding and compressed history.",
+      "type": "number",
+      "default": 2,
+      "minimum": 0.5,
+      "maximum": 50
+    },
+    "maxHistorySize": {
+      "order": 6,
+      "title": "Maximum History Size",
+      "description": "Maximum number of undo/redo states to keep (reduced automatically for large images).",
+      "type": "integer",
+      "default": 20,
+      "minimum": 5,
+      "maximum": 50
     }
   }
 }
