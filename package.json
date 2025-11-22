@@ -70,6 +70,12 @@
           "description": "Show success message after copying selection to clipboard",
           "type": "boolean",
           "default": true
+        },
+        "history": {
+          "title": "History",
+          "description": "Show success message after undo/redo operations",
+          "type": "boolean",
+          "default": true
         }
       }
     }

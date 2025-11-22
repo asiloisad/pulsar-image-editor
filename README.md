@@ -51,6 +51,13 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 - **Save As** (`Ctrl+Shift+S` / `Cmd+Shift+S`): Save to a new location
 - **Auto-reload**: Images automatically update when modified externally
 
+### Undo/Redo
+- **Undo** (`Ctrl+Z` / `Cmd+Z`): Revert to previous state
+- **Redo** (`Ctrl+Y` or `Ctrl+Shift+Z` / `Cmd+Y` or `Cmd+Shift+Z`): Restore next state
+- **History**: Up to 20 previous states maintained
+- **Position tracking**: Shows current position in history (e.g., "3/10")
+- **Non-linear**: Creating new changes from middle of history removes forward states
+
 ## Keyboard Shortcuts
 
 ### Zoom & View
@@ -88,6 +95,10 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 - `Ctrl/Cmd + S`: Save
 - `Ctrl/Cmd + Shift + S`: Save As
 
+### Undo/Redo
+- `Ctrl/Cmd + Z`: Undo
+- `Ctrl/Cmd + Y` or `Ctrl/Cmd + Shift + Z`: Redo
+
 ## Menus
 
 Access all features through:
@@ -117,6 +128,7 @@ Control which operations show success notifications:
 - **Transform**: Show message after rotating or flipping
 - **Adjustment**: Show message after color/tone adjustments and filters
 - **Clipboard**: Show message after copying to clipboard
+- **History**: Show message after undo/redo operations
 
 Access these settings in: **Settings → Packages → image-editor → Settings**
 
@@ -136,7 +148,9 @@ Access these settings in: **Settings → Packages → image-editor → Settings*
 - **Panning**: Right-click and drag to pan around zoomed images.
 - **Quick Navigation**: Use mouse wheel (without Ctrl) to quickly browse through images in a folder.
 - **Batch Workflow**: Make edits, save, then use wheel scroll to move to the next image.
-- **Non-destructive**: All edits are non-destructive until you save. Use "Reload Image" to revert.
+- **Non-destructive**: All edits are non-destructive until you save. Use "Reload Image" to revert to saved version.
+- **Undo/Redo**: Experiment freely with up to 20 levels of undo. Check notification messages to see your position in history.
+- **History Management**: Making new edits from the middle of history will discard forward states, just like in text editors.
 
 ## Contributing
 
