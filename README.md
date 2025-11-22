@@ -82,7 +82,7 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 ### Selection & Editing
 - `Ctrl/Cmd + C`: Copy selection to clipboard
 - `Alt + C`: Crop to selection
-- `Alt + B`: Blur selection (medium)
+- `Alt + B`: Blur (medium)
 
 ### Navigation
 - Arrow keys: Scroll image

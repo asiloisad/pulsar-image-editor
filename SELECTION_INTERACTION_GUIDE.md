@@ -200,9 +200,9 @@ All existing selection-based features work with resize/move:
 |---------|----------|-------------------------|
 | Crop to Selection | Alt+C | ✓ Yes |
 | Copy Selection | Ctrl+C | ✓ Yes |
-| Blur Selection (Light) | - | ✓ Yes |
-| Blur Selection (Medium) | Alt+B | ✓ Yes |
-| Blur Selection (Strong) | - | ✓ Yes |
+| Blur (Light) | - | ✓ Yes |
+| Blur (Medium) | Alt+B | ✓ Yes |
+| Blur (Strong) | - | ✓ Yes |
 
 Plus all filters/adjustments that support selections:
 - Grayscale, Invert, Sepia, Sharpen, etc.

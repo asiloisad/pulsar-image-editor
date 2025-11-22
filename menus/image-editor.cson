@@ -40,6 +40,10 @@
               {label: 'Sharpen (Light)', command: 'image-editor:sharpen-light'}
               {label: 'Sharpen (Medium)', command: 'image-editor:sharpen-medium'}
               {label: 'Sharpen (Strong)', command: 'image-editor:sharpen-strong'}
+              {type: 'separator'}
+              {label: 'Blur (Light)', command: 'image-editor:blur-light'}
+              {label: 'Blur (Medium)', command: 'image-editor:blur-medium'}
+              {label: 'Blur (Strong)', command: 'image-editor:blur-strong'}
             ]
           }
           {type: 'separator'}
@@ -48,10 +52,6 @@
             submenu: [
               {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
               {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
-              {type: 'separator'}
-              {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}
-              {label: 'Blur Selection (Medium)', command: 'image-editor:blur-selection-medium'}
-              {label: 'Blur Selection (Strong)', command: 'image-editor:blur-selection-strong'}
             ]
           }
           {type: 'separator'}
@@ -100,6 +100,10 @@
         {label: 'Sharpen (Light)', command: 'image-editor:sharpen-light'}
         {label: 'Sharpen (Medium)', command: 'image-editor:sharpen-medium'}
         {label: 'Sharpen (Strong)', command: 'image-editor:sharpen-strong'}
+        {type: 'separator'}
+        {label: 'Blur (Light)', command: 'image-editor:blur-light'}
+        {label: 'Blur (Medium)', command: 'image-editor:blur-medium'}
+        {label: 'Blur (Strong)', command: 'image-editor:blur-strong'}
       ]
     }
     {type: 'separator'}
@@ -108,10 +112,6 @@
       submenu: [
         {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
         {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
-        {type: 'separator'}
-        {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}
-        {label: 'Blur Selection (Medium)', command: 'image-editor:blur-selection-medium'}
-        {label: 'Blur Selection (Strong)', command: 'image-editor:blur-selection-strong'}
       ]
     }
     {type: 'separator'}

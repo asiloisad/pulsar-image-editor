@@ -187,7 +187,7 @@ updateImageFromCanvas(canvas, msg) // Helper for updating image
 | Invert Colors | `Ctrl+I` | `Cmd+I` |
 | Copy Selection | `Ctrl+C` | `Cmd+C` |
 | Crop Selection | `Alt+C` | `Alt+C` |
-| Blur Selection | `Alt+B` | `Alt+B` |
+| Blur | `Alt+B` | `Alt+B` |
 
 ---
 
@@ -217,9 +217,9 @@ updateImageFromCanvas(canvas, msg) // Helper for updating image
 ├─ Selection
 │  ├─ Copy to Clipboard
 │  ├─ Crop to Selection
-│  ├─ Blur Selection (Light)
-│  ├─ Blur Selection (Medium)
-│  └─ Blur Selection (Strong)
+│  ├─ Blur (Light)
+│  ├─ Blur (Medium)
+│  └─ Blur (Strong)
 ├─ Save
 └─ Save As...
 ```

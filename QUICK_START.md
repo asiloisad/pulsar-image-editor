@@ -90,7 +90,7 @@
 These still work with resized/moved selections:
 - `Alt+C` - Crop to selection
 - `Ctrl/Cmd+C` - Copy selection
-- `Alt+B` - Blur selection (medium)
+- `Alt+B` - Blur (medium)
 - `Ctrl/Cmd+Z` - Undo
 - `Ctrl/Cmd+S` - Save
 
