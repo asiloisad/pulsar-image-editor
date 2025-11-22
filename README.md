@@ -1,16 +1,9 @@
-# Image View package
+# image-editor
 
-Open images in an editor in Pulsar. Support zooming via <kbd>cmd-+</kbd>, <kbd>cmd--</kbd>, and <kbd>cmd-0</kbd>.
+## Installation
 
+To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/packages/image-editor) in the Install pane of the Pulsar settings or run `ppm install image-editor`. Alternatively, you can run `ppm install asiloisad/pulsar-image-editor` to install a package directly from the GitHub repository.
 
-Currently supports the following file extensions:
+# Contributing
 
-  * `.bmp`
-  * `.gif`
-  * `.ico`
-  * `.jpeg`
-  * `.jpg`
-  * `.png`
-  * `.webp`
-
-![](https://f.cloud.github.com/assets/671378/2241669/7df82fec-9cdc-11e3-992d-f19a7235ebda.png)
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
