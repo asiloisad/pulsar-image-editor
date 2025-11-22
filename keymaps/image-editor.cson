@@ -11,6 +11,11 @@
   'alt-c': 'image-editor:crop-to-selection'
   'cmd-s': 'image-editor:save'
   'cmd-shift-s': 'image-editor:save-image'
+  'cmd-]': 'image-editor:rotate-90-cw'
+  'cmd-[': 'image-editor:rotate-90-ccw'
+  'cmd-shift-r': 'image-editor:rotate-180'
+  'cmd-h': 'image-editor:flip-horizontal'
+  'cmd-shift-h': 'image-editor:flip-vertical'
 
 '.platform-win32 .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -25,6 +30,11 @@
   'alt-c': 'image-editor:crop-to-selection'
   'ctrl-s': 'image-editor:save'
   'ctrl-shift-s': 'image-editor:save-image'
+  'ctrl-]': 'image-editor:rotate-90-cw'
+  'ctrl-[': 'image-editor:rotate-90-ccw'
+  'ctrl-shift-r': 'image-editor:rotate-180'
+  'ctrl-h': 'image-editor:flip-horizontal'
+  'ctrl-shift-h': 'image-editor:flip-vertical'
 
 '.platform-linux .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -39,3 +49,8 @@
   'alt-c': 'image-editor:crop-to-selection'
   'ctrl-s': 'image-editor:save'
   'ctrl-shift-s': 'image-editor:save-image'
+  'ctrl-]': 'image-editor:rotate-90-cw'
+  'ctrl-[': 'image-editor:rotate-90-ccw'
+  'ctrl-shift-r': 'image-editor:rotate-180'
+  'ctrl-h': 'image-editor:flip-horizontal'
+  'ctrl-shift-h': 'image-editor:flip-vertical'

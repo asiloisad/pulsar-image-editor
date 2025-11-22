@@ -52,6 +52,12 @@
           "description": "Show success message after saving image",
           "type": "boolean",
           "default": true
+        },
+        "transform": {
+          "title": "Transform",
+          "description": "Show success message after rotating or flipping image",
+          "type": "boolean",
+          "default": true
         }
       }
     }

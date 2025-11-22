@@ -1,4 +1,70 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      {
+        'label': 'Image Editor'
+        'submenu': [
+          {label: 'Reload Image', command: 'image-editor:reload'}
+          {type: 'separator'}
+          {
+            label: 'Transform'
+            submenu: [
+              {label: 'Rotate 90° Clockwise', command: 'image-editor:rotate-90-cw'}
+              {label: 'Rotate 90° Counter-clockwise', command: 'image-editor:rotate-90-ccw'}
+              {label: 'Rotate 180°', command: 'image-editor:rotate-180'}
+              {type: 'separator'}
+              {label: 'Flip Horizontal', command: 'image-editor:flip-horizontal'}
+              {label: 'Flip Vertical', command: 'image-editor:flip-vertical'}
+            ]
+          }
+          {type: 'separator'}
+          {
+            label: 'Selection'
+            submenu: [
+              {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
+              {type: 'separator'}
+              {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}
+              {label: 'Blur Selection (Medium)', command: 'image-editor:blur-selection-medium'}
+              {label: 'Blur Selection (Strong)', command: 'image-editor:blur-selection-strong'}
+            ]
+          }
+          {type: 'separator'}
+          {label: 'Save', command: 'image-editor:save'}
+          {label: 'Save As...', command: 'image-editor:save-image'}
+        ]
+      }
+    ]
+  }
+]
+
 'context-menu':
   '.image-editor': [
     {label: 'Reload Image', command: 'image-editor:reload'}
+    {type: 'separator'}
+    {
+      label: 'Transform'
+      submenu: [
+        {label: 'Rotate 90° Clockwise', command: 'image-editor:rotate-90-cw'}
+        {label: 'Rotate 90° Counter-clockwise', command: 'image-editor:rotate-90-ccw'}
+        {label: 'Rotate 180°', command: 'image-editor:rotate-180'}
+        {type: 'separator'}
+        {label: 'Flip Horizontal', command: 'image-editor:flip-horizontal'}
+        {label: 'Flip Vertical', command: 'image-editor:flip-vertical'}
+      ]
+    }
+    {type: 'separator'}
+    {
+      label: 'Selection'
+      submenu: [
+        {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
+        {type: 'separator'}
+        {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}
+        {label: 'Blur Selection (Medium)', command: 'image-editor:blur-selection-medium'}
+        {label: 'Blur Selection (Strong)', command: 'image-editor:blur-selection-strong'}
+      ]
+    }
+    {type: 'separator'}
+    {label: 'Save', command: 'image-editor:save'}
+    {label: 'Save As...', command: 'image-editor:save-image'}
   ]
