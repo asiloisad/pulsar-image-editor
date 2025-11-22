@@ -1,7 +1,4 @@
 - optimize file loading time if large size
 - add multiple selection, but cropy allow only 1
-- blur method: make it selection aware (like other filter functions)
 - list to scales if clicked on....
 - add service provider
-- add toggle in toolbar to indicate and change status of reverse colors (global state)
-- change tooltips of arrow to match pulsar styleguide

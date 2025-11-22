@@ -92,6 +92,13 @@
       "default": 30,
       "minimum": 0,
       "maximum": 255
+    },
+    "reverseColors": {
+      "order": 4,
+      "title": "Reverse Colors",
+      "description": "Invert image colors for viewing (does not affect saved image)",
+      "type": "boolean",
+      "default": false
     }
   }
 }
