@@ -27,6 +27,7 @@
   'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
+  'escape': 'image-editor:hide-selection'
 
 '.platform-win32 .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -57,6 +58,7 @@
   'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
+  'escape': 'image-editor:hide-selection'
 
 '.platform-linux .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -87,3 +89,4 @@
   'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
+  'escape': 'image-editor:hide-selection'
