@@ -1,0 +1,26 @@
+'.platform-darwin .image-viewer':
+  'cmd-+': 'image-viewer:zoom-in'
+  'cmd-=': 'image-viewer:zoom-in'
+  'cmd--': 'image-viewer:zoom-out'
+  'cmd-_': 'image-viewer:zoom-out'
+  'cmd-8': 'image-viewer:center'
+  'cmd-9': 'image-viewer:zoom-to-fit'
+  'cmd-0': 'image-viewer:reset-zoom'
+
+'.platform-win32 .image-viewer':
+  'ctrl-+': 'image-viewer:zoom-in'
+  'ctrl-=': 'image-viewer:zoom-in'
+  'ctrl--': 'image-viewer:zoom-out'
+  'ctrl-_': 'image-viewer:zoom-out'
+  'ctrl-8': 'image-viewer:center'
+  'ctrl-9': 'image-viewer:zoom-to-fit'
+  'ctrl-0': 'image-viewer:reset-zoom'
+
+'.platform-linux .image-viewer':
+  'ctrl-+': 'image-viewer:zoom-in'
+  'ctrl-=': 'image-viewer:zoom-in'
+  'ctrl--': 'image-viewer:zoom-out'
+  'ctrl-_': 'image-viewer:zoom-out'
+  'ctrl-8': 'image-viewer:center'
+  'ctrl-9': 'image-viewer:zoom-to-fit'
+  'ctrl-0': 'image-viewer:reset-zoom'

@@ -1,0 +1,34 @@
+{
+  "name": "image-viewer",
+  "description": "Open images in an editor",
+  "repository": "https://github.com/asiloisad/pulsar-image-viewer",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "main": "./lib/main",
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "bytes": "^3.0.0",
+    "etch": "0.9.0"
+  },
+  "deserializers": {
+    "ImageViewer": "deserialize"
+  },
+  "configSchema": {
+    "defaultBackgroundColor": {
+      "order": 1,
+      "title": "Default Background Color",
+      "type": "string",
+      "enum": ["white", "black", "transparent", "native"],
+      "default": "transparent"
+    }
+  }
+}
