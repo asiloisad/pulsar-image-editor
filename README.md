@@ -56,6 +56,7 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 - **Redo** (`Ctrl+Y` or `Ctrl+Shift+Z` / `Cmd+Y` or `Cmd+Shift+Z`): Restore next state
 - **History**: Up to 20 previous states maintained
 - **Position tracking**: Shows current position in history (e.g., "3/10")
+- **Viewport preservation**: Restores image position and zoom level with each undo/redo
 - **Non-linear**: Creating new changes from middle of history removes forward states
 
 ## Keyboard Shortcuts
@@ -149,8 +150,9 @@ Access these settings in: **Settings → Packages → image-editor → Settings*
 - **Quick Navigation**: Use mouse wheel (without Ctrl) to quickly browse through images in a folder.
 - **Batch Workflow**: Make edits, save, then use wheel scroll to move to the next image.
 - **Non-destructive**: All edits are non-destructive until you save. Use "Reload Image" to revert to saved version.
-- **Undo/Redo**: Experiment freely with up to 20 levels of undo. Check notification messages to see your position in history.
+- **Undo/Redo**: Experiment freely with up to 20 levels of undo. Check notification messages to see your position in history. Viewport position and zoom are preserved when undoing/redoing operations like crop.
 - **History Management**: Making new edits from the middle of history will discard forward states, just like in text editors.
+- **Crop + Undo**: When you undo a crop operation, both the image and viewport position are restored, maintaining your visual context.
 
 ## Contributing
 
