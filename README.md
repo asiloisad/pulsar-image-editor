@@ -32,12 +32,6 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 - **Posterize** - Reduce color levels for artistic effect
 
 ### Filters
-- **Sharpen** - Enhance image detail with three intensity levels:
-  - Light sharpen
-  - Medium sharpen
-  - Strong sharpen
-
-### Selection-Based Editing
 - **Create Selections**: Left-click and drag to create a selection rectangle
 - **Copy to Clipboard** (`Ctrl+C` / `Cmd+C`): Copy the selected area
 - **Crop to Selection** (`Alt+C`): Crop the image to the selected area
@@ -45,6 +39,10 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
   - Light blur
   - Medium blur
   - Strong blur
+- **Sharpen** - Enhance image detail with three intensity levels:
+  - Light sharpen
+  - Medium sharpen
+  - Strong sharpen
 
 ### File Operations
 - **Save** (`Ctrl+S` / `Cmd+S`): Save changes to the current file
@@ -59,32 +57,6 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 - **Viewport preservation**: Restores image position and zoom level with each undo/redo
 - **Non-linear**: Creating new changes from middle of history removes forward states
 
-## Keyboard Shortcuts
-
-### Zoom & View
-- `Ctrl/Cmd + +` or `Ctrl/Cmd + =`: Zoom in
-- `Ctrl/Cmd + -`: Zoom out
-- `Ctrl/Cmd + 0`: Reset zoom to 100%
-- `Ctrl/Cmd + 8`: Center image
-- `Ctrl/Cmd + 9`: Zoom to fit
-- `Ctrl/Cmd + R`: Reload image
-
-### Transform
-- `Ctrl/Cmd + ]`: Rotate 90° clockwise
-- `Ctrl/Cmd + [`: Rotate 90° counter-clockwise
-- `Ctrl/Cmd + Shift + R`: Rotate 180°
-- `Ctrl/Cmd + H`: Flip horizontal
-- `Ctrl/Cmd + Shift + H`: Flip vertical
-
-### Color & Adjustments
-- `Ctrl/Cmd + Shift + G`: Grayscale
-- `Ctrl/Cmd + I`: Invert colors
-
-### Selection & Editing
-- `Ctrl/Cmd + C`: Copy selection to clipboard
-- `Alt + C`: Crop to selection
-- `Alt + B`: Blur (medium)
-
 ### Navigation
 - Arrow keys: Scroll image
 - Page Up/Down: Scroll by page
@@ -95,64 +67,6 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 ### File Operations
 - `Ctrl/Cmd + S`: Save
 - `Ctrl/Cmd + Shift + S`: Save As
-
-### Undo/Redo
-- `Ctrl/Cmd + Z`: Undo
-- `Ctrl/Cmd + Y` or `Ctrl/Cmd + Shift + Z`: Redo
-
-## Menus
-
-Access all features through:
-- **Main Menu**: Packages → Image Editor
-- **Context Menu**: Right-click on any image
-
-Both menus are organized into logical sections:
-- **Transform**: Rotation and flipping operations
-- **Adjustments**: Color and tone adjustments
-- **Filters**: Sharpen and other effects
-- **Selection**: Selection-based operations
-
-## Configuration
-
-### Default Background Color
-Choose the default background for transparent images:
-- White
-- Black
-- Transparent (checkerboard pattern)
-- Native (system default)
-
-### Success Message Notifications
-Control which operations show success notifications:
-- **Crop**: Show message after cropping
-- **Blur**: Show message after blurring
-- **Save**: Show message after saving
-- **Transform**: Show message after rotating or flipping
-- **Adjustment**: Show message after color/tone adjustments and filters
-- **Clipboard**: Show message after copying to clipboard
-- **History**: Show message after undo/redo operations
-
-Access these settings in: **Settings → Packages → image-editor → Settings**
-
-## Tips
-
-### Working with Selections
-- **Creating Selections**: Left-click and drag to create a selection rectangle. Click outside to clear it.
-- **Copy Before Crop**: Use `Ctrl+C` to copy your selection before cropping if you want to preserve the original.
-- **Precise Selection**: Zoom in for more precise selection control.
-
-### Color Adjustments
-- **Interactive Dialogs**: Adjustments like Brightness/Contrast, Saturation, Hue Shift, and Posterize show interactive dialogs with sliders.
-- **Real-time Preview**: Move sliders to see different values before applying.
-- **Multiple Adjustments**: Apply multiple adjustments sequentially for complex effects.
-
-### Workflow Tips
-- **Panning**: Right-click and drag to pan around zoomed images.
-- **Quick Navigation**: Use mouse wheel (without Ctrl) to quickly browse through images in a folder.
-- **Batch Workflow**: Make edits, save, then use wheel scroll to move to the next image.
-- **Non-destructive**: All edits are non-destructive until you save. Use "Reload Image" to revert to saved version.
-- **Undo/Redo**: Experiment freely with up to 20 levels of undo. Check notification messages to see your position in history. Viewport position and zoom are preserved when undoing/redoing operations like crop.
-- **History Management**: Making new edits from the middle of history will discard forward states, just like in text editors.
-- **Crop + Undo**: When you undo a crop operation, both the image and viewport position are restored, maintaining your visual context.
 
 ## Contributing
 
