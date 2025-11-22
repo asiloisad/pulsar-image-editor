@@ -18,10 +18,32 @@
               {label: 'Flip Vertical', command: 'image-editor:flip-vertical'}
             ]
           }
+          {
+            label: 'Adjustments'
+            submenu: [
+              {label: 'Brightness & Contrast...', command: 'image-editor:brightness-contrast'}
+              {label: 'Saturation...', command: 'image-editor:saturation'}
+              {label: 'Hue Shift...', command: 'image-editor:hue-shift'}
+              {type: 'separator'}
+              {label: 'Grayscale', command: 'image-editor:grayscale'}
+              {label: 'Invert Colors', command: 'image-editor:invert-colors'}
+              {label: 'Sepia Tone', command: 'image-editor:sepia'}
+              {label: 'Posterize...', command: 'image-editor:posterize'}
+            ]
+          }
+          {
+            label: 'Filters'
+            submenu: [
+              {label: 'Sharpen (Light)', command: 'image-editor:sharpen-light'}
+              {label: 'Sharpen (Medium)', command: 'image-editor:sharpen-medium'}
+              {label: 'Sharpen (Strong)', command: 'image-editor:sharpen-strong'}
+            ]
+          }
           {type: 'separator'}
           {
             label: 'Selection'
             submenu: [
+              {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
               {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
               {type: 'separator'}
               {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}
@@ -53,10 +75,32 @@
         {label: 'Flip Vertical', command: 'image-editor:flip-vertical'}
       ]
     }
+    {
+      label: 'Adjustments'
+      submenu: [
+        {label: 'Brightness & Contrast...', command: 'image-editor:brightness-contrast'}
+        {label: 'Saturation...', command: 'image-editor:saturation'}
+        {label: 'Hue Shift...', command: 'image-editor:hue-shift'}
+        {type: 'separator'}
+        {label: 'Grayscale', command: 'image-editor:grayscale'}
+        {label: 'Invert Colors', command: 'image-editor:invert-colors'}
+        {label: 'Sepia Tone', command: 'image-editor:sepia'}
+        {label: 'Posterize...', command: 'image-editor:posterize'}
+      ]
+    }
+    {
+      label: 'Filters'
+      submenu: [
+        {label: 'Sharpen (Light)', command: 'image-editor:sharpen-light'}
+        {label: 'Sharpen (Medium)', command: 'image-editor:sharpen-medium'}
+        {label: 'Sharpen (Strong)', command: 'image-editor:sharpen-strong'}
+      ]
+    }
     {type: 'separator'}
     {
       label: 'Selection'
       submenu: [
+        {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
         {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
         {type: 'separator'}
         {label: 'Blur Selection (Light)', command: 'image-editor:blur-selection-light'}

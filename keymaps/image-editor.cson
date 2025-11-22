@@ -16,6 +16,9 @@
   'cmd-shift-r': 'image-editor:rotate-180'
   'cmd-h': 'image-editor:flip-horizontal'
   'cmd-shift-h': 'image-editor:flip-vertical'
+  'cmd-shift-g': 'image-editor:grayscale'
+  'cmd-i': 'image-editor:invert-colors'
+  'cmd-c': 'image-editor:copy-selection'
 
 '.platform-win32 .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -35,6 +38,9 @@
   'ctrl-shift-r': 'image-editor:rotate-180'
   'ctrl-h': 'image-editor:flip-horizontal'
   'ctrl-shift-h': 'image-editor:flip-vertical'
+  'ctrl-shift-g': 'image-editor:grayscale'
+  'ctrl-i': 'image-editor:invert-colors'
+  'ctrl-c': 'image-editor:copy-selection'
 
 '.platform-linux .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -54,3 +60,6 @@
   'ctrl-shift-r': 'image-editor:rotate-180'
   'ctrl-h': 'image-editor:flip-horizontal'
   'ctrl-shift-h': 'image-editor:flip-vertical'
+  'ctrl-shift-g': 'image-editor:grayscale'
+  'ctrl-i': 'image-editor:invert-colors'
+  'ctrl-c': 'image-editor:copy-selection'

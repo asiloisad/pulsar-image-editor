@@ -58,6 +58,18 @@
           "description": "Show success message after rotating or flipping image",
           "type": "boolean",
           "default": true
+        },
+        "adjustment": {
+          "title": "Adjustment",
+          "description": "Show success message after color/tone adjustments and filters",
+          "type": "boolean",
+          "default": true
+        },
+        "clipboard": {
+          "title": "Clipboard",
+          "description": "Show success message after copying selection to clipboard",
+          "type": "boolean",
+          "default": true
         }
       }
     }
