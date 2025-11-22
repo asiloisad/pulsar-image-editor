@@ -28,7 +28,7 @@
       "title": "Default Background Color",
       "type": "string",
       "enum": ["white", "black", "transparent", "native"],
-      "default": "transparent"
+      "default": "native"
     }
   }
 }

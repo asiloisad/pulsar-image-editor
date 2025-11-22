@@ -73,12 +73,19 @@
   .image-container {
     flex: 1 1 0;
     display: flex;
-    overflow: auto;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+
+    &.grabbing {
+      cursor: grabbing;
+    }
 
     img {
       display: block;
-      flex: none;
-      margin: auto;
+      position: absolute;
+      transform-origin: 0 0;
+      pointer-events: none; /* Let events pass through to container for panning */
       -webkit-user-drag: none;
     }
   }
