@@ -29,6 +29,31 @@
       "type": "string",
       "enum": ["white", "black", "transparent", "native"],
       "default": "native"
+    },
+    "showSuccessMessages": {
+      "order": 2,
+      "title": "Show Success Messages",
+      "type": "object",
+      "properties": {
+        "crop": {
+          "title": "Crop",
+          "description": "Show success message after cropping to selection",
+          "type": "boolean",
+          "default": true
+        },
+        "blur": {
+          "title": "Blur",
+          "description": "Show success message after applying blur",
+          "type": "boolean",
+          "default": true
+        },
+        "save": {
+          "title": "Save",
+          "description": "Show success message after saving image",
+          "type": "boolean",
+          "default": true
+        }
+      }
     }
   }
 }
