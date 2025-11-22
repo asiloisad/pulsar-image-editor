@@ -7,9 +7,6 @@
         'submenu': [
           {label: 'Reload Image', command: 'image-editor:reload'}
           {type: 'separator'}
-          {label: 'Undo', command: 'image-editor:undo'}
-          {label: 'Redo', command: 'image-editor:redo'}
-          {type: 'separator'}
           {
             label: 'Transform'
             submenu: [
@@ -55,6 +52,9 @@
             ]
           }
           {type: 'separator'}
+          {label: 'Undo', command: 'image-editor:undo'}
+          {label: 'Redo', command: 'image-editor:redo'}
+          {type: 'separator'}
           {label: 'Save', command: 'image-editor:save'}
           {label: 'Save As...', command: 'image-editor:save-image'}
         ]
@@ -66,9 +66,6 @@
 'context-menu':
   '.image-editor': [
     {label: 'Reload Image', command: 'image-editor:reload'}
-    {type: 'separator'}
-    {label: 'Undo', command: 'image-editor:undo'}
-    {label: 'Redo', command: 'image-editor:redo'}
     {type: 'separator'}
     {
       label: 'Transform'
@@ -114,6 +111,9 @@
         {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
       ]
     }
+    {type: 'separator'}
+    {label: 'Undo', command: 'image-editor:undo'}
+    {label: 'Redo', command: 'image-editor:redo'}
     {type: 'separator'}
     {label: 'Save', command: 'image-editor:save'}
     {label: 'Save As...', command: 'image-editor:save-image'}

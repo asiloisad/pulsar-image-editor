@@ -8,7 +8,7 @@ Enhanced the image editor's selection functionality with three major improvement
 
 ## Files Modified
 
-### 1. `lib/image-editor-view.js`
+### 1. `lib/view.js`
 **Major Changes:**
 
 #### Selection Coordinate System Overhaul

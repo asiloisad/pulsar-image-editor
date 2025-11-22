@@ -31,7 +31,7 @@
 
 ### Code Changes
 
-#### 1. **image-editor-view.js**
+#### 1. **view.js**
 Added three new methods:
 - `rotate(degrees)` - Generic rotation handler using canvas transformations
 - `flipHorizontal()` - Horizontal flip using canvas scale transformation
