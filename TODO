@@ -4,8 +4,6 @@
 - blur method: make it selection aware (like other filter functions)
 - list to scales if clicked on....
 - add actual mouse position in status bar panel
-- add commands "first-image" ("Home") and "last-image" ("End")
-- add buton "<<" (go to first picture, "Home") and ">>" (go to last picture, "End")
 - add service provider
 - add toggle in toolbar to indicate and change status of reverse colors (global state)
 - add tooltips to button: "center", "zoom to fit", "zoom to 100"

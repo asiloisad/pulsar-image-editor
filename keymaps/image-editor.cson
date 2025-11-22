@@ -23,6 +23,8 @@
   'cmd-z': 'image-editor:undo'
   'cmd-shift-z': 'image-editor:redo'
   'cmd-y': 'image-editor:redo'
+  'home': 'image-editor:first-image'
+  'end': 'image-editor:last-image'
 
 '.platform-win32 .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -49,6 +51,8 @@
   'ctrl-z': 'image-editor:undo'
   'ctrl-shift-z': 'image-editor:redo'
   'ctrl-y': 'image-editor:redo'
+  'home': 'image-editor:first-image'
+  'end': 'image-editor:last-image'
 
 '.platform-linux .image-editor':
   'ctrl-+': 'image-editor:zoom-in'
@@ -75,3 +79,5 @@
   'ctrl-z': 'image-editor:undo'
   'ctrl-shift-z': 'image-editor:redo'
   'ctrl-y': 'image-editor:redo'
+  'home': 'image-editor:first-image'
+  'end': 'image-editor:last-image'
