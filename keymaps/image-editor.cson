@@ -23,6 +23,8 @@
   'cmd-z': 'image-editor:undo'
   'cmd-shift-z': 'image-editor:redo'
   'cmd-y': 'image-editor:redo'
+  'pageup': 'image-editor:previous-image'
+  'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
 
@@ -51,6 +53,8 @@
   'ctrl-z': 'image-editor:undo'
   'ctrl-shift-z': 'image-editor:redo'
   'ctrl-y': 'image-editor:redo'
+  'pageup': 'image-editor:previous-image'
+  'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
 
@@ -79,5 +83,7 @@
   'ctrl-z': 'image-editor:undo'
   'ctrl-shift-z': 'image-editor:redo'
   'ctrl-y': 'image-editor:redo'
+  'pageup': 'image-editor:previous-image'
+  'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'
   'end': 'image-editor:last-image'
