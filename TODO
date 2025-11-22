@@ -3,7 +3,6 @@
 - loading spinner of atom
 - blur method: make it selection aware (like other filter functions)
 - list to scales if clicked on....
-- add actual mouse position in status bar panel
 - add service provider
 - add toggle in toolbar to indicate and change status of reverse colors (global state)
 - add tooltips to button: "center", "zoom to fit", "zoom to 100"
