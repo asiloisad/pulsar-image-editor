@@ -86,6 +86,12 @@
           "description": "Show success message after undo/redo operations",
           "type": "boolean",
           "default": true
+        },
+        "selection": {
+          "title": "Selection",
+          "description": "Show success message after selection operations",
+          "type": "boolean",
+          "default": true
         }
       }
     },
