@@ -21,6 +21,8 @@
           {
             label: 'Adjustments'
             submenu: [
+              {label: 'Auto Adjust Colors', command: 'image-editor:auto-adjust-colors'}
+              {type: 'separator'}
               {label: 'Brightness & Contrast...', command: 'image-editor:brightness-contrast'}
               {label: 'Saturation...', command: 'image-editor:saturation'}
               {label: 'Hue Shift...', command: 'image-editor:hue-shift'}
@@ -82,6 +84,8 @@
     {
       label: 'Adjustments'
       submenu: [
+        {label: 'Auto Adjust Colors', command: 'image-editor:auto-adjust-colors'}
+        {type: 'separator'}
         {label: 'Brightness & Contrast...', command: 'image-editor:brightness-contrast'}
         {label: 'Saturation...', command: 'image-editor:saturation'}
         {label: 'Hue Shift...', command: 'image-editor:hue-shift'}
