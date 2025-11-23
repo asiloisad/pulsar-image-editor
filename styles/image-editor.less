@@ -159,6 +159,7 @@
   right: 0;
   bottom: 0;
   background: transparent;
+  pointer-events: none; // Allow clicks to pass through
   z-index: 9999;
 }
 
@@ -176,6 +177,7 @@
   z-index: 10000;
   min-width: 300px;
   cursor: move;
+  pointer-events: auto; // Dialog still receives clicks
 
   .dialog-title {
     margin: 0 0 15px 0;
@@ -184,6 +186,15 @@
     color: @text-color-highlight;
     cursor: move;
     user-select: none;
+  }
+
+  .dialog-selection-info {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: @text-color-info;
+    text-align: center;
   }
 
   .dialog-slider-container {
