@@ -149,3 +149,75 @@
   }
 
 }
+
+// Adjustment Dialog -------------------
+
+.image-editor-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 9999;
+}
+
+.image-editor-adjustment-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: @base-background-color;
+  color: @text-color;
+  border: 1px solid @base-border-color;
+  border-radius: @component-border-radius;
+  padding: @component-padding;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  min-width: 300px;
+  cursor: move;
+
+  .dialog-title {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: @font-size;
+    color: @text-color-highlight;
+    cursor: move;
+    user-select: none;
+  }
+
+  .dialog-slider-container {
+    margin-bottom: 15px;
+
+    .dialog-label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: @font-size;
+      color: @text-color;
+    }
+
+    .dialog-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      input[type="range"] {
+        flex: 1;
+      }
+
+      .dialog-value-label {
+        min-width: 50px;
+        text-align: right;
+        font-family: monospace;
+        color: @text-color-subtle;
+      }
+    }
+  }
+
+  .dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
