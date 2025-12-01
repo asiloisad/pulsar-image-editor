@@ -58,8 +58,8 @@
           {label: 'Undo', command: 'image-editor:undo'}
           {label: 'Redo', command: 'image-editor:redo'}
           {type: 'separator'}
-          {label: 'Save', command: 'image-editor:save'}
-          {label: 'Save As...', command: 'image-editor:save-image'}
+          {label: 'Save', command: 'core:save'}
+          {label: 'Save As...', command: 'core:save-as'}
         ]
       }
     ]
@@ -121,6 +121,6 @@
     {label: 'Undo', command: 'image-editor:undo'}
     {label: 'Redo', command: 'image-editor:redo'}
     {type: 'separator'}
-    {label: 'Save', command: 'image-editor:save'}
-    {label: 'Save As...', command: 'image-editor:save-image'}
+    {label: 'Save', command: 'core:save'}
+    {label: 'Save As...', command: 'core:save-as'}
   ]
