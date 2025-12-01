@@ -173,6 +173,56 @@
     }
   }
 
+  // Boundary overlay animation
+  .boundary-overlay {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: @text-color-subtle;
+    background: fade(@base-background-color, 80%);
+    border-radius: @component-border-radius;
+
+    &.boundary-overlay-left {
+      &::before {
+        content: "⟲";
+      }
+    }
+
+    &.boundary-overlay-right {
+      &::before {
+        content: "⟳";
+      }
+    }
+
+    &.active {
+      animation: boundary-flash 0.8s ease-out;
+    }
+  }
+
+  @keyframes boundary-flash {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
   // Background color
   [background="white"] {
     background-color: white;
