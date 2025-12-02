@@ -173,34 +173,30 @@
     }
   }
 
-  // Boundary overlay animation
+  // Boundary overlay animation (styled like find-and-replace wrap icon)
   .boundary-overlay {
+    @wrap-size: (@font-size * 10);
+
     position: absolute;
-    bottom: 16px;
-    right: 16px;
-    width: 64px;
-    height: 64px;
+    top: 50%;
+    left: 50%;
+    margin-top: (@wrap-size * -0.5);
+    margin-left: (@wrap-size * -0.5);
     pointer-events: none;
     opacity: 0;
     z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    color: @text-color-subtle;
-    background: fade(@base-background-color, 80%);
-    border-radius: @component-border-radius;
+    background: fadeout(darken(@syntax-background-color, 4%), 55%);
+    border-radius: (@component-border-radius * 2);
+    text-align: center;
 
-    &.boundary-overlay-left {
-      &::before {
-        content: "⟲";
-      }
-    }
-
-    &.boundary-overlay-right {
-      &::before {
-        content: "⟳";
-      }
+    &::before {
+      // Octicons look best in sizes that are multiples of 16px
+      font-size: (@wrap-size - mod(@wrap-size, 16px) - 32px);
+      line-height: @wrap-size;
+      height: @wrap-size;
+      width: @wrap-size;
+      color: @syntax-text-color;
+      opacity: .5;
     }
 
     &.active {
