@@ -18,6 +18,11 @@
       "versions": {
         "^1.0.0": "consumeTreeView"
       }
+    },
+    "claude-chat": {
+      "versions": {
+        "^1.0.0": "consumeClaudeChat"
+      }
     }
   },
   "dependencies": {
