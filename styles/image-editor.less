@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     padding: @spacing;
     border-bottom: 1px solid @panel-heading-border-color;
-    background-color: @panel-heading-background-color;
+    background-color: @tool-panel-background-color;
 
     position: relative; // Ensure absolute positioning context for children
 
@@ -31,8 +31,7 @@
       margin: @spacing;
       vertical-align: middle;
       font-size: 0;
-      border: 2px solid #fff;
-      box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, .4), 0 0 0 1px hsla(0, 0%, 0%, .1), 0 2px 2px hsla(0, 0%, 0%, .2);
+      border-right: 1px solid @tool-panel-border-color;
       background-clip: content-box;
 
       &:hover {
@@ -68,6 +67,15 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &-group-zoom {
+      .btn:first-of-type {
+        border-radius: @component-border-radius 0 0 @component-border-radius !important;
+      }
+      .btn:last-child {
+        border-radius: 0px;
+      }
     }
 
     .reset-zoom-button {
