@@ -7,7 +7,6 @@
   '7': 'image-editor:reset-zoom'
   '8': 'image-editor:center'
   '9': 'image-editor:zoom-to-fit'
-  '0': 'image-editor:zoom-to-100'
   'b': 'image-editor:blur-medium'
   's': 'image-editor:sharpen-medium'
   'x': 'image-editor:crop-to-selection'

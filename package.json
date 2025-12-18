@@ -38,10 +38,10 @@
       "title": "Default Background Color",
       "type": "string",
       "enum": [
+        "native",
         "white",
         "black",
-        "transparent",
-        "native"
+        "transparent"
       ],
       "default": "native"
     },

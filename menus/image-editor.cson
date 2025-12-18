@@ -40,6 +40,15 @@
         {label: 'Blur (Strong)', command: 'image-editor:blur-strong'}
       ]
     }
+    {
+      label: 'Background'
+      submenu: [
+        {label: 'Native', command: 'image-editor:background-native'}
+        {label: 'White', command: 'image-editor:background-white'}
+        {label: 'Black', command: 'image-editor:background-black'}
+        {label: 'Transparent', command: 'image-editor:background-transparent'}
+      ]
+    }
     {type: 'separator'}
     {
       label: 'Selection'

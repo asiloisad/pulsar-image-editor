@@ -8,79 +8,73 @@
   flex-direction: column;
   background-color: @pane-item-background-color;
   user-select: none;
+  position: relative;
 
 
   // Image Controls -------------------
 
   .image-controls {
+    position: absolute;
+    top: @spacing;
+    left: 0;
+    right: 0;
+    z-index: 50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: @spacing;
-    border-bottom: 1px solid @panel-heading-border-color;
-    background-color: @tool-panel-background-color;
+    pointer-events: none; // Allow clicks to pass through to image
 
-    position: relative; // Ensure absolute positioning context for children
-
-    a {
-      display: inline-block;
-      position: relative;
-      width: 24px;
-      height: 24px;
-      margin: @spacing;
-      vertical-align: middle;
-      font-size: 0;
-      border-right: 1px solid @tool-panel-border-color;
-      background-clip: content-box;
-
-      &:hover {
-        border-color: #ccc;
-      }
-
-      &:active {
-        border-color: #999;
-      }
-    }
-
-    &-color-white {
-      color: #000;
-      background-color: #fff;
-      background-image: url(@transparent-background-image);
-    }
-
-    &-color-black {
-      color: #fff;
-      background-color: #000;
-      background-image: url(@transparent-background-image);
-    }
-
-    &-color-native {
-      background-color: @app-background-color;
+    .image-controls-spacer {
+      width: 20px;
     }
 
     .btn-group {
       margin: @spacing;
-    }
+      pointer-events: auto; // Make buttons clickable
+      background-color: fade(@tool-panel-background-color, 85%);
+      border-radius: 0 0 @component-border-radius @component-border-radius;
 
-    &-group-navigation {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &-group-zoom {
-      .btn:first-of-type {
-        border-radius: @component-border-radius 0 0 @component-border-radius !important;
+      .btn:first-child {
+        border-top-left-radius: 0;
       }
+
       .btn:last-child {
-        border-radius: 0px;
+        border-top-right-radius: 0;
       }
     }
 
-    .reset-zoom-button {
+    .zoom-to-fit-button {
       min-width: 5em;
     }
+
+    .loading-spinner-right {
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: auto;
+      opacity: 0;
+
+      &.visible {
+        opacity: 1;
+      }
+
+      &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        border: 2px solid fade(@accent-color, 30%);
+        border-top-color: @accent-color;
+        border-radius: 50%;
+        animation: spinner-rotate 0.8s linear infinite;
+      }
+    }
+
+    @keyframes spinner-rotate {
+      to { transform: rotate(360deg); }
+    }
+
   }
 
 
@@ -228,6 +222,10 @@
   }
 
   // Background color
+  [background="native"] {
+    background-color: @app-background-color;
+  }
+
   [background="white"] {
     background-color: white;
     background-image: url(@transparent-background-image);
@@ -238,8 +236,8 @@
     background-image: url(@transparent-background-image);
   }
 
-  [background="native"] {
-    background-color: @app-background-color;
+  [background="transparent"] {
+    background-image: url(@transparent-background-image);
   }
 
 }
