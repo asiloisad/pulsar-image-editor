@@ -2,7 +2,7 @@
   "name": "image-editor",
   "description": "Open images in an editor",
   "repository": "https://github.com/asiloisad/pulsar-image-editor",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "license": "MIT",
   "engines": {
     "atom": "*"
