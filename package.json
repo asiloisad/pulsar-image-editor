@@ -45,63 +45,8 @@
       ],
       "default": "native"
     },
-    "showSuccessMessages": {
-      "order": 2,
-      "title": "Show Success Messages",
-      "type": "object",
-      "properties": {
-        "crop": {
-          "title": "Crop",
-          "description": "Show success message after cropping to selection",
-          "type": "boolean",
-          "default": true
-        },
-        "blur": {
-          "title": "Blur",
-          "description": "Show success message after applying blur",
-          "type": "boolean",
-          "default": true
-        },
-        "save": {
-          "title": "Save",
-          "description": "Show success message after saving image",
-          "type": "boolean",
-          "default": true
-        },
-        "transform": {
-          "title": "Transform",
-          "description": "Show success message after rotating or flipping image",
-          "type": "boolean",
-          "default": true
-        },
-        "adjustment": {
-          "title": "Adjustment",
-          "description": "Show success message after color/tone adjustments and filters",
-          "type": "boolean",
-          "default": true
-        },
-        "clipboard": {
-          "title": "Clipboard",
-          "description": "Show success message after copying selection to clipboard",
-          "type": "boolean",
-          "default": true
-        },
-        "history": {
-          "title": "History",
-          "description": "Show success message after undo/redo operations",
-          "type": "boolean",
-          "default": true
-        },
-        "selection": {
-          "title": "Selection",
-          "description": "Show success message after selection operations",
-          "type": "boolean",
-          "default": true
-        }
-      }
-    },
     "autoSelectTolerance": {
-      "order": 3,
+      "order": 2,
       "title": "Auto-Select Tolerance",
       "description": "Color difference tolerance for auto-selection (0-255). Lower values require more similar colors to be considered background.",
       "type": "integer",
@@ -110,7 +55,7 @@
       "maximum": 255
     },
     "largeImageThreshold": {
-      "order": 5,
+      "order": 3,
       "title": "Large Image Threshold",
       "description": "File size threshold (in MB) for applying optimizations. Images larger than this will use async decoding and compressed history.",
       "type": "number",
@@ -119,13 +64,29 @@
       "maximum": 50
     },
     "maxHistorySize": {
-      "order": 6,
+      "order": 4,
       "title": "Maximum History Size",
       "description": "Maximum number of undo/redo states to keep (reduced automatically for large images).",
       "type": "integer",
       "default": 50,
       "minimum": 5,
       "maximum": 200
+    },
+    "wheelNavigationDelay": {
+      "order": 5,
+      "title": "Mouse Wheel Navigation Delay",
+      "description": "Minimum delay (in milliseconds) between mouse wheel navigation events. Higher values prevent accidental rapid scrolling.",
+      "type": "integer",
+      "default": 150,
+      "minimum": 50,
+      "maximum": 500
+    },
+    "showSuccessMessages": {
+      "order": 6,
+      "title": "Show Success Messages",
+      "description": "Show success notifications after operations like crop, transform, save, etc.",
+      "type": "boolean",
+      "default": true
     },
     "enablePreloading": {
       "order": 7,
@@ -134,19 +95,24 @@
       "type": "boolean",
       "default": true
     },
-    "wheelNavigationDelay": {
-      "order": 8,
-      "title": "Mouse Wheel Navigation Delay",
-      "description": "Minimum delay (in milliseconds) between mouse wheel navigation events. Higher values prevent accidental rapid scrolling.",
-      "type": "integer",
-      "default": 150,
-      "minimum": 50,
-      "maximum": 500
-    },
     "switchZoomAndNavigation": {
-      "order": 9,
+      "order": 8,
       "title": "Switch Zoom and Navigation",
       "description": "When enabled, scroll wheel zooms and Ctrl+scroll navigates. When disabled, scroll wheel navigates and Ctrl+scroll zooms.",
+      "type": "boolean",
+      "default": true
+    },
+    "autoZoomLimit": {
+      "order": 9,
+      "title": "Limit Auto Zoom to 100%",
+      "description": "When enabled, auto zoom (fit to viewport) will not scale images beyond 100%. When disabled, small images will be scaled up to fit the viewport.",
+      "type": "boolean",
+      "default": true
+    },
+    "scrollCycle": {
+      "order": 10,
+      "title": "Cycle Through Images",
+      "description": "When enabled, navigating past the last image wraps to the first image (and vice versa). When disabled, navigation stops at the boundaries.",
       "type": "boolean",
       "default": true
     }
