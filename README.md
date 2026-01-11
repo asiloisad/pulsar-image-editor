@@ -21,8 +21,8 @@ To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/
 
 - **Left-click drag**: Create selection.
 - **Right-click drag**: Pan image.
-- **Mouse wheel**: Navigate to previous/next image.
-- **Ctrl + Mouse wheel**: Zoom in/out at cursor position.
+- **Mouse wheel**: Navigate to previous/next image (or zoom if `switchZoomAndNavigation` is disabled).
+- **Ctrl + Mouse wheel**: Zoom in/out at cursor position (or navigate if `switchZoomAndNavigation` is disabled).
 
 ## Commands
 

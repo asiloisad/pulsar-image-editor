@@ -142,6 +142,13 @@
       "default": 150,
       "minimum": 50,
       "maximum": 500
+    },
+    "switchZoomAndNavigation": {
+      "order": 9,
+      "title": "Switch Zoom and Navigation",
+      "description": "When enabled, scroll wheel zooms and Ctrl+scroll navigates. When disabled, scroll wheel navigates and Ctrl+scroll zooms.",
+      "type": "boolean",
+      "default": true
     }
   }
 }
