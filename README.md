@@ -12,6 +12,7 @@ View and edit images directly in Pulsar. A feature-rich image viewer with suppor
 - **Selection tools**: Create, resize, auto-select, and crop to selection.
 - **Undo/redo**: Full history with viewport preservation.
 - **Navigation panel**: Browse folder images via [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel).
+- **API for packages**: Other packages can open images from data URLs without saving to disk.
 
 ## Installation
 
@@ -79,6 +80,47 @@ Commands available in `.image-editor`:
 - `image-editor:undo`: (`Z`) revert to previous state,
 - `image-editor:redo`: (`Y`) restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.
+
+## Service for other packages
+
+Other packages can open images directly from data URLs without saving to disk using the `image-editor` service.
+
+In your `package.json`:
+
+```json
+{
+  "consumedServices": {
+    "image-editor": {
+      "versions": {
+        "1.0.0": "consumeImageEditor"
+      }
+    }
+  }
+}
+```
+
+In your package:
+
+```javascript
+module.exports = {
+  imageEditor: null,
+
+  consumeImageEditor(service) {
+    this.imageEditor = service;
+    return new Disposable(() => {
+      this.imageEditor = null;
+    });
+  },
+
+  openImage(dataUrl) {
+    if (this.imageEditor) {
+      this.imageEditor.openFromDataUrl(dataUrl, "My Image Title");
+    }
+  }
+};
+```
+
+The opened image will be marked as "modified" and prompt the user to save when closing.
 
 ## Contributing
 

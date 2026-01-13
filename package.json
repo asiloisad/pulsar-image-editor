@@ -8,6 +8,13 @@
     "atom": "*"
   },
   "main": "./lib/main",
+  "providedServices": {
+    "image-editor": {
+      "versions": {
+        "1.0.0": "provideImageEditor"
+      }
+    }
+  },
   "consumedServices": {
     "status-bar": {
       "versions": {
