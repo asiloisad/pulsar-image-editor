@@ -95,29 +95,22 @@
       "type": "boolean",
       "default": true
     },
-    "enablePreloading": {
-      "order": 7,
-      "title": "Enable Image Preloading",
-      "description": "Preload adjacent images in the background for instant navigation. Uses more memory but makes navigation feel instant.",
-      "type": "boolean",
-      "default": true
-    },
     "switchZoomAndNavigation": {
-      "order": 8,
+      "order": 7,
       "title": "Switch Zoom and Navigation",
       "description": "When enabled, scroll wheel zooms and Ctrl+scroll navigates. When disabled, scroll wheel navigates and Ctrl+scroll zooms.",
       "type": "boolean",
       "default": true
     },
     "autoZoomLimit": {
-      "order": 9,
+      "order": 8,
       "title": "Limit Auto Zoom to 100%",
       "description": "When enabled, auto zoom (fit to viewport) will not scale images beyond 100%. When disabled, small images will be scaled up to fit the viewport.",
       "type": "boolean",
       "default": true
     },
     "scrollCycle": {
-      "order": 10,
+      "order": 9,
       "title": "Cycle Through Images",
       "description": "When enabled, navigating past the last image wraps to the first image (and vice versa). When disabled, navigation stops at the boundaries.",
       "type": "boolean",

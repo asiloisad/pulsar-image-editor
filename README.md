@@ -12,7 +12,7 @@ View and edit images directly in Pulsar. A feature-rich image viewer with suppor
 - **Selection tools**: Create, resize, auto-select, and crop to selection.
 - **Undo/redo**: Full history with viewport preservation.
 - **Navigation panel**: Browse folder images via [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel).
-- **API for packages**: Other packages can open images from data URLs without saving to disk.
+- **API for packages**: Other packages can open images from data URLs without saving to disk. Used by [hydrogen-next](https://github.com/asiloisad/pulsar-hydrogen-next) to display plot outputs.
 
 ## Installation
 
