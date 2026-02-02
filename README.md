@@ -2,6 +2,8 @@
 
 View and edit images directly in Pulsar. A feature-rich image viewer with support for cropping, rotation, color adjustments, filters, and more.
 
+![view](https://github.com/asiloisad/pulsar-image-editor/blob/master/assets/view.png?raw=true)
+
 ## Features
 
 - **Zoom & pan**: Zoom controls, keyboard shortcuts, and right-click drag to pan.
