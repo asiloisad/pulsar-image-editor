@@ -22,8 +22,6 @@
   'w': 'image-editor:select-visible-area'
   'z': 'image-editor:undo'
   'y': 'image-editor:redo'
-  'm': 'image-editor:move'
-  'd': 'image-editor:duplicate'
   'pageup': 'image-editor:previous-image'
   'pagedown': 'image-editor:next-image'
   'home': 'image-editor:first-image'

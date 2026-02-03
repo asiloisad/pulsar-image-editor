@@ -75,8 +75,6 @@ Commands available in `.image-editor`:
 - `image-editor:copy-selection`: (`C`) copy selection to clipboard,
 - `image-editor:crop-to-selection`: (`X`) crop to selection,
 - `image-editor:hide-selection`: (`Escape`) clear selection,
-- `image-editor:move`: (`M`) move file to new location,
-- `image-editor:duplicate`: (`D`) create copy of file,
 - `image-editor:edit-in-paint`: open in Windows Paint,
 - `image-editor:show-properties`: view file and image info,
 - `image-editor:undo`: (`Z`) revert to previous state,
