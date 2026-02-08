@@ -64,4 +64,6 @@
     {type: 'separator'}
     {label: 'Save', command: 'core:save'}
     {label: 'Save As...', command: 'core:save-as'}
+    {type: 'separator'}
+    {label: 'Toggle Pending', command: 'image-editor:toggle-pending'}
   ]
