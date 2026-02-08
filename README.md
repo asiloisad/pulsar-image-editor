@@ -12,6 +12,8 @@ View and edit images directly in Pulsar. A feature-rich image viewer with suppor
 - **Color adjustments**: Brightness, contrast, saturation, hue, and auto-adjust.
 - **Filters**: Blur, sharpen, grayscale, sepia, posterize, and invert.
 - **Selection tools**: Create, resize, auto-select, and crop to selection.
+- **SVG support**: View SVG images with automatic viewBox dimension handling (read-only).
+- **Pending tab toggle**: Toggle the pending state of the editor tab.
 - **Undo/redo**: Full history with viewport preservation.
 - **Navigation panel**: Browse folder images via [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel).
 - **API for packages**: Other packages can open images from data URLs without saving to disk. Used by [hydrogen-next](https://github.com/asiloisad/pulsar-hydrogen-next) to display plot outputs.
@@ -77,6 +79,7 @@ Commands available in `.image-editor`:
 - `image-editor:hide-selection`: (`Escape`) clear selection,
 - `image-editor:edit-in-paint`: open in Windows Paint,
 - `image-editor:show-properties`: view file and image info,
+- `image-editor:toggle-pending`: (`P`) toggle pending state of the tab,
 - `image-editor:undo`: (`Z`) revert to previous state,
 - `image-editor:redo`: (`Y`) restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.

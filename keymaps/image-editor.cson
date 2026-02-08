@@ -20,6 +20,7 @@
   'a': 'image-editor:auto-select'
   'q': 'image-editor:auto-select-with-border'
   'w': 'image-editor:select-visible-area'
+  'p': 'image-editor:toggle-pending'
   'z': 'image-editor:undo'
   'y': 'image-editor:redo'
   'pageup': 'image-editor:previous-image'
