@@ -84,9 +84,9 @@ Commands available in `.image-editor`:
 - `image-editor:redo`: (`Y`) restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.
 
-## Service for other packages
+## Provided Service `image-editor`
 
-Other packages can open images directly from data URLs without saving to disk using the `image-editor` service.
+Allows other packages to open images directly from data URLs without saving to disk. Used by [hydrogen-next](https://web.pulsar-edit.dev/packages/hydrogen-next) to display plot outputs.
 
 In your `package.json`:
 
@@ -102,7 +102,7 @@ In your `package.json`:
 }
 ```
 
-In your package:
+In your main module:
 
 ```javascript
 module.exports = {
