@@ -79,7 +79,6 @@ Commands available in `.image-editor`:
 - `image-editor:hide-selection`: (`Escape`) clear selection,
 - `image-editor:edit-in-paint`: open in Windows Paint,
 - `image-editor:show-properties`: view file and image info,
-- `image-editor:toggle-pending`: (`P`) toggle pending state of the tab,
 - `image-editor:undo`: (`Z`) revert to previous state,
 - `image-editor:redo`: (`Y`) restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.
