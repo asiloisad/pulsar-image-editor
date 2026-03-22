@@ -2,7 +2,7 @@
   "name": "image-editor",
   "description": "View and edit images directly in Pulsar",
   "repository": "https://github.com/asiloisad/pulsar-image-editor",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "license": "MIT",
   "engines": {
     "atom": "*"
