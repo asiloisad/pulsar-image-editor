@@ -1,4 +1,7 @@
 'context-menu':
+  '.tree-view .file .name[data-path$=".svg"]': [
+    {label: 'Open in Image Editor', command: 'image-editor:open-in-image-editor'}
+  ]
   '.image-editor': [
     {label: 'Reload Image', command: 'image-editor:reload'}
     {type: 'separator'}
