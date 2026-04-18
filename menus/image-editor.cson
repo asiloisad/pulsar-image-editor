@@ -57,6 +57,7 @@
       label: 'Selection'
       submenu: [
         {label: 'Auto Select', command: 'image-editor:auto-select'}
+        {label: 'Select All', command: 'image-editor:select-all'}
         {label: 'Copy to Clipboard', command: 'image-editor:copy-selection'}
         {label: 'Crop to Selection', command: 'image-editor:crop-to-selection'}
       ]
