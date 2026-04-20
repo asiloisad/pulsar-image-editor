@@ -43,6 +43,7 @@ Commands available in `.image-editor`:
 - `image-editor:next-image`: <kbd>PageDown</kbd> go to next image,
 - `image-editor:last-image`: <kbd>End</kbd> go to last image in folder,
 - `image-editor:reload`: refresh image from disk,
+- `image-editor:open-in-new-tab`: open the current image in a new tab (also available in tree-view and text-editor context menus for SVG files),
 - `image-editor:background-white`: set white background,
 - `image-editor:background-black`: set black background,
 - `image-editor:background-transparent`: set transparent background,

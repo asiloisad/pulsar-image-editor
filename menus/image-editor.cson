@@ -2,7 +2,11 @@
   '.tree-view .file .name[data-path$=".svg"]': [
     {label: 'Open in Image Editor', command: 'image-editor:open-in-new-tab'}
   ]
+  'atom-text-editor[data-grammar="text html svg"]': [
+    {label: 'Open in Image Editor', command: 'image-editor:open-in-new-tab'}
+  ]
   '.image-editor': [
+    {label: 'Open in New Tab', command: 'image-editor:open-in-new-tab'}
     {label: 'Reload Image', command: 'image-editor:reload'}
     {type: 'separator'}
     {
