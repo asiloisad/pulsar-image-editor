@@ -3,7 +3,7 @@
 
 @import "ui-variables";
 
-@spacing: @component-padding/2;
+@spacing: @component-padding / 2;
 @transparent-background-image: "atom://image-editor/assets/transparent.png";
 
 .image-editor {
@@ -12,7 +12,6 @@
   background-color: @pane-item-background-color;
   user-select: none;
   position: relative;
-
 
   // Image Controls -------------------
 
@@ -64,7 +63,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         width: 14px;
         height: 14px;
         border: 2px solid fade(@accent-color, 30%);
@@ -75,11 +74,11 @@
     }
 
     @keyframes spinner-rotate {
-      to { transform: rotate(360deg); }
+      to {
+        transform: rotate(360deg);
+      }
     }
-
   }
-
 
   // Image -------------------
 
@@ -171,10 +170,26 @@
       box-sizing: border-box;
       z-index: 10;
 
-      &.nw { top: -5px; left: -5px; cursor: nw-resize; }
-      &.ne { top: -5px; right: -5px; cursor: ne-resize; }
-      &.se { bottom: -5px; right: -5px; cursor: se-resize; }
-      &.sw { bottom: -5px; left: -5px; cursor: sw-resize; }
+      &.nw {
+        top: -5px;
+        left: -5px;
+        cursor: nw-resize;
+      }
+      &.ne {
+        top: -5px;
+        right: -5px;
+        cursor: ne-resize;
+      }
+      &.se {
+        bottom: -5px;
+        right: -5px;
+        cursor: se-resize;
+      }
+      &.sw {
+        bottom: -5px;
+        left: -5px;
+        cursor: sw-resize;
+      }
     }
   }
 
@@ -201,7 +216,7 @@
       height: @wrap-size;
       width: @wrap-size;
       color: @syntax-text-color;
-      opacity: .5;
+      opacity: 0.5;
     }
 
     &.active {
@@ -242,7 +257,6 @@
   [background="transparent"] {
     background-image: url(@transparent-background-image);
   }
-
 }
 
 // Adjustment Dialog -------------------

@@ -119,7 +119,7 @@ module.exports = {
     if (this.imageEditor) {
       this.imageEditor.openFromDataUrl(dataUrl, "My Image Title");
     }
-  }
+  },
 };
 ```
 
