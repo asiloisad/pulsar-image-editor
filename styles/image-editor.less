@@ -3,7 +3,7 @@
 
 @import "ui-variables";
 
-@spacing: @component-padding / 2;
+@spacing: (@component-padding / 2);
 @transparent-background-image: "atom://image-editor/assets/transparent.png";
 
 .image-editor {
@@ -17,14 +17,14 @@
 
   .image-controls {
     position: absolute;
-    top: @spacing;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: @spacing;
+    padding: 0 @spacing @spacing;
     pointer-events: none; // Allow clicks to pass through to image
 
     .image-controls-spacer {
@@ -32,7 +32,7 @@
     }
 
     .btn-group {
-      margin: @spacing;
+      margin: 0 @spacing @spacing;
       pointer-events: auto; // Make buttons clickable
       background-color: fade(@tool-panel-background-color, 85%);
       border-radius: 0 0 @component-border-radius @component-border-radius;
@@ -246,16 +246,16 @@
 
   [background="white"] {
     background-color: white;
-    background-image: url(@transparent-background-image);
+    background-image: url("@{transparent-background-image}");
   }
 
   [background="black"] {
     background-color: black;
-    background-image: url(@transparent-background-image);
+    background-image: url("@{transparent-background-image}");
   }
 
   [background="transparent"] {
-    background-image: url(@transparent-background-image);
+    background-image: url("@{transparent-background-image}");
   }
 }
 
