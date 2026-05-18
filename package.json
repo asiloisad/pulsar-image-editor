@@ -13,6 +13,11 @@
       "versions": {
         "1.0.0": "provideImageEditor"
       }
+    },
+    "navigation-adapter": {
+      "versions": {
+        "1.0.0": "provideNavigationAdapter"
+      }
     }
   },
   "consumedServices": {

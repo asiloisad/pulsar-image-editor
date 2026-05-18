@@ -84,6 +84,24 @@ Commands available in `.image-editor`:
 - `image-editor:redo`: <kbd>Y</kbd> restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.
 
+## Provided Service `navigation-adapter`
+
+Exposes the folder image list to [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel). When an image is open, the panel lists all images in the same folder. Clicking an entry loads that image in the same editor.
+
+In your `package.json`:
+
+```json
+{
+  "consumedServices": {
+    "navigation-adapter": {
+      "versions": {
+        "1.0.0": "consumeNavigationAdapter"
+      }
+    }
+  }
+}
+```
+
 ## Provided Service `image-editor`
 
 Allows other packages to open images directly from data URLs without saving to disk. Used by [hydrogen-next](https://web.pulsar-edit.dev/packages/hydrogen-next) to display plot outputs.
