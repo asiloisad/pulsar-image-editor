@@ -22,67 +22,67 @@ View and edit images directly in Pulsar. A feature-rich image viewer with suppor
 
 To install `image-editor` search for [image-editor](https://web.pulsar-edit.dev/packages/image-editor) in the Install pane of the Pulsar settings or run `ppm install image-editor`. Alternatively, you can run `ppm install asiloisad/pulsar-image-editor` to install a package directly from the GitHub repository.
 
-## Mouse controls
-
-- **Left-click drag**: Create selection.
-- **Right-click drag**: Pan image.
-- **Mouse wheel**: Navigate to previous/next image (or zoom if `switchZoomAndNavigation` is disabled).
-- **Ctrl + Mouse wheel**: Zoom in/out at cursor position (or navigate if `switchZoomAndNavigation` is disabled).
-
 ## Commands
 
 Commands available in `.image-editor`:
 
-- `image-editor:zoom-in`: <kbd>+</kbd> increase zoom level,
-- `image-editor:zoom-out`: <kbd>-</kbd> decrease zoom level,
-- `image-editor:reset-zoom`: <kbd>7</kbd> reset to 100%,
-- `image-editor:zoom-to-fit`: <kbd>9</kbd> scale to fit viewport,
-- `image-editor:center`: <kbd>8</kbd> center image in viewport,
-- `image-editor:first-image`: <kbd>Home</kbd> go to first image in folder,
-- `image-editor:previous-image`: <kbd>PageUp</kbd> go to previous image,
-- `image-editor:next-image`: <kbd>PageDown</kbd> go to next image,
-- `image-editor:last-image`: <kbd>End</kbd> go to last image in folder,
+- `image-editor:zoom-in`: increase zoom level,
+- `image-editor:zoom-out`: decrease zoom level,
+- `image-editor:reset-zoom`: reset to 100%,
+- `image-editor:zoom-to-fit`: scale to fit viewport,
+- `image-editor:center`: center image in viewport,
+- `image-editor:first-image`: go to first image in folder,
+- `image-editor:previous-image`: go to previous image,
+- `image-editor:next-image`: go to next image,
+- `image-editor:last-image`: go to last image in folder,
 - `image-editor:reload`: refresh image from disk,
 - `image-editor:open-in-new-tab`: open the current image in a new tab (also available in tree-view and text-editor context menus for SVG files),
 - `image-editor:background-white`: set white background,
 - `image-editor:background-black`: set black background,
 - `image-editor:background-transparent`: set transparent background,
 - `image-editor:background-native`: set native background,
-- `image-editor:rotate-90-cw`: <kbd>]</kbd> rotate 90° clockwise,
-- `image-editor:rotate-90-ccw`: <kbd>[</kbd> rotate 90° counter-clockwise,
+- `image-editor:rotate-90-cw`: rotate 90° clockwise,
+- `image-editor:rotate-90-ccw`: rotate 90° counter-clockwise,
 - `image-editor:rotate-180`: rotate 180°,
 - `image-editor:rotate-free`: rotate by custom angle,
-- `image-editor:flip-horizontal`: <kbd>H</kbd> flip horizontally,
-- `image-editor:flip-vertical`: <kbd>V</kbd> flip vertically,
+- `image-editor:flip-horizontal`: flip horizontally,
+- `image-editor:flip-vertical`: flip vertically,
 - `image-editor:resize`: resize with aspect ratio lock,
 - `image-editor:auto-adjust-colors`: automatic color optimization,
 - `image-editor:brightness-contrast`: adjust brightness and contrast,
 - `image-editor:saturation`: adjust color intensity,
 - `image-editor:hue-shift`: rotate color spectrum,
-- `image-editor:grayscale`: <kbd>G</kbd> convert to black & white,
-- `image-editor:invert-colors`: <kbd>I</kbd> permanently invert colors,
+- `image-editor:grayscale`: convert to black & white,
+- `image-editor:invert-colors`: permanently invert colors,
 - `image-editor:sepia`: apply sepia effect,
 - `image-editor:posterize`: reduce color levels,
 - `image-editor:blur`: custom blur radius,
 - `image-editor:blur-light`: light blur,
-- `image-editor:blur-medium`: <kbd>B</kbd> medium blur,
+- `image-editor:blur-medium`: medium blur,
 - `image-editor:blur-strong`: strong blur,
 - `image-editor:sharpen`: custom sharpen strength,
 - `image-editor:sharpen-light`: light sharpen,
-- `image-editor:sharpen-medium`: <kbd>S</kbd> medium sharpen,
+- `image-editor:sharpen-medium`: medium sharpen,
 - `image-editor:sharpen-strong`: strong sharpen,
-- `image-editor:select-all`: <kbd>A</kbd> select entire image,
-- `image-editor:auto-select`: <kbd>Q</kbd> auto-detect and select content,
-- `image-editor:auto-select-with-border`: <kbd>W</kbd> auto-select with border padding,
-- `image-editor:select-visible-area`: <kbd>E</kbd> select visible portion,
-- `image-editor:copy-selection`: <kbd>C</kbd> copy selection to clipboard,
-- `image-editor:crop-to-selection`: <kbd>X</kbd> crop to selection,
-- `image-editor:hide-selection`: <kbd>Escape</kbd> clear selection,
+- `image-editor:select-all`: select entire image,
+- `image-editor:auto-select`: auto-detect and select content,
+- `image-editor:auto-select-with-border`: auto-select with border padding,
+- `image-editor:select-visible-area`: select visible portion,
+- `image-editor:copy-selection`: copy selection to clipboard,
+- `image-editor:crop-to-selection`: crop to selection,
+- `image-editor:hide-selection`: clear selection,
 - `image-editor:edit-in-paint`: open in Windows Paint,
 - `image-editor:show-properties`: view file and image info,
-- `image-editor:undo`: <kbd>Z</kbd> revert to previous state,
-- `image-editor:redo`: <kbd>Y</kbd> restore next state,
+- `image-editor:undo`: revert to previous state,
+- `image-editor:redo`: restore next state,
 - `image-editor:attach-to-claude`: attach image to Claude chat.
+
+## Mouse controls
+
+- **Left-click drag**: Create selection.
+- **Right-click drag**: Pan image.
+- **Mouse wheel**: Navigate to previous/next image (or zoom if `switchZoomAndNavigation` is disabled).
+- **Ctrl + Mouse wheel**: Zoom in/out at cursor position (or navigate if `switchZoomAndNavigation` is disabled).
 
 ## Provided Service `navigation-adapter`
 
@@ -102,9 +102,18 @@ In your `package.json`:
 }
 ```
 
+In your main module:
+
+```javascript
+consumeNavigationAdapter(adapter) {
+  // adapter follows the navigation-adapter protocol:
+  // handlesItem(item), observeHeaders(item, callback), navigateTo(item, header)
+}
+```
+
 ## Provided Service `image-editor`
 
-Allows other packages to open images directly from data URLs without saving to disk. Used by [hydrogen-next](https://web.pulsar-edit.dev/packages/hydrogen-next) to display plot outputs.
+Allows other packages to open images directly from data URLs without saving to disk. Used by [hydrogen-next](https://github.com/asiloisad/pulsar-hydrogen-next) to display plot outputs.
 
 In your `package.json`:
 
