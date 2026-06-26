@@ -30,6 +30,7 @@ Commands available in `.image-editor`:
 - `image-editor:zoom-out`: decrease zoom level,
 - `image-editor:reset-zoom`: reset to 100%,
 - `image-editor:zoom-to-fit`: scale to fit viewport,
+- `image-editor:zoom-to-selection`: zoom to fit the current selection and clear it,
 - `image-editor:center`: center image in viewport,
 - `image-editor:first-image`: go to first image in folder,
 - `image-editor:previous-image`: go to previous image,
@@ -80,6 +81,7 @@ Commands available in `.image-editor`:
 ## Mouse controls
 
 - **Left-click drag**: Create selection.
+- **Double left-click**: Zoom to fit, or zoom to selection when double-clicking inside one.
 - **Right-click drag**: Pan image.
 - **Mouse wheel**: Navigate to previous/next image (or zoom if `switchZoomAndNavigation` is disabled).
 - **Ctrl + Mouse wheel**: Zoom in/out at cursor position (or navigate if `switchZoomAndNavigation` is disabled).
