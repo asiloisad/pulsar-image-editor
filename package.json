@@ -89,8 +89,8 @@
       "title": "Mouse Wheel Navigation Delay",
       "description": "Minimum delay (in milliseconds) between mouse wheel navigation events. Higher values prevent accidental rapid scrolling.",
       "type": "integer",
-      "default": 150,
-      "minimum": 50,
+      "default": 50,
+      "minimum": 10,
       "maximum": 500
     },
     "showSuccessMessages": {
