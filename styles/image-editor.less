@@ -338,8 +338,8 @@
   &.image-editor-rotate-dialog {
     display: flex;
     flex-direction: column;
-    width: 420px;
-    height: 460px;
+    width: 640px;
+    height: 740px;
     min-width: 360px;
     min-height: 360px;
     max-width: 90vw;
@@ -362,6 +362,19 @@
         margin: 0;
         line-height: 1;
       }
+    }
+
+    .dialog-quick-angle-buttons {
+      align-items: center;
+    }
+
+    .dialog-angle-value {
+      min-width: 70px;
+      margin-left: auto;
+      color: @text-color-subtle;
+      font-family: monospace;
+      text-align: right;
+      white-space: nowrap;
     }
 
     .dialog-selection-info {
