@@ -15,6 +15,7 @@
         {label: 'Rotate 90° Clockwise', command: 'image-editor:rotate-90-cw'}
         {label: 'Rotate 90° Counter-clockwise', command: 'image-editor:rotate-90-ccw'}
         {label: 'Rotate 180°', command: 'image-editor:rotate-180'}
+        {label: 'Rotate by Angle...', command: 'image-editor:rotate-free'}
         {type: 'separator'}
         {label: 'Flip Horizontal', command: 'image-editor:flip-horizontal'}
         {label: 'Flip Vertical', command: 'image-editor:flip-vertical'}

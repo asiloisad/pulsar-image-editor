@@ -44,7 +44,7 @@ Commands available in `.image-editor`:
 - `image-editor:rotate-90-cw`: rotate 90° clockwise,
 - `image-editor:rotate-90-ccw`: rotate 90° counter-clockwise,
 - `image-editor:rotate-180`: rotate 180°,
-- `image-editor:rotate-free`: rotate by custom angle,
+- `image-editor:rotate-free`: rotate by custom angle with preview and optional trimming,
 - `image-editor:flip-horizontal`: flip horizontally,
 - `image-editor:flip-vertical`: flip vertically,
 - `image-editor:resize`: resize with aspect ratio lock,
