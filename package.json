@@ -103,7 +103,7 @@
     "switchZoomAndNavigation": {
       "order": 7,
       "title": "Switch Zoom and Navigation",
-      "description": "When enabled, scroll wheel zooms and Ctrl+scroll navigates. When disabled, scroll wheel navigates and Ctrl+scroll zooms.",
+      "description": "When enabled, scroll wheel navigates and Ctrl+scroll zooms. When disabled, scroll wheel zooms and Ctrl+scroll navigates.",
       "type": "boolean",
       "default": true
     },
