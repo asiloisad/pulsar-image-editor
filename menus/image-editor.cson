@@ -30,7 +30,7 @@
         {label: 'Saturation...', command: 'image-editor:saturation'}
         {label: 'Hue Shift...', command: 'image-editor:hue-shift'}
         {type: 'separator'}
-        {label: 'Grayscale', command: 'image-editor:grayscale'}
+        {label: 'Grayscale...', command: 'image-editor:grayscale'}
         {label: 'Invert Colors', command: 'image-editor:invert-colors'}
         {label: 'Sepia Tone', command: 'image-editor:sepia'}
         {label: 'Posterize...', command: 'image-editor:posterize'}
@@ -39,10 +39,12 @@
     {
       label: 'Filters'
       submenu: [
+        {label: 'Sharpen...', command: 'image-editor:sharpen'}
         {label: 'Sharpen (Light)', command: 'image-editor:sharpen-light'}
         {label: 'Sharpen (Medium)', command: 'image-editor:sharpen-medium'}
         {label: 'Sharpen (Strong)', command: 'image-editor:sharpen-strong'}
         {type: 'separator'}
+        {label: 'Blur...', command: 'image-editor:blur'}
         {label: 'Blur (Light)', command: 'image-editor:blur-light'}
         {label: 'Blur (Medium)', command: 'image-editor:blur-medium'}
         {label: 'Blur (Strong)', command: 'image-editor:blur-strong'}

@@ -52,7 +52,7 @@ Commands available in `.image-editor`:
 - `image-editor:brightness-contrast`: adjust brightness and contrast,
 - `image-editor:saturation`: adjust color intensity,
 - `image-editor:hue-shift`: rotate color spectrum,
-- `image-editor:grayscale`: convert to black & white,
+- `image-editor:grayscale`: convert to black & white with adjustable amount,
 - `image-editor:invert-colors`: permanently invert colors,
 - `image-editor:sepia`: apply sepia effect,
 - `image-editor:posterize`: reduce color levels,
